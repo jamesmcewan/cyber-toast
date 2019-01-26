@@ -58,7 +58,7 @@ function __cyber_toast_git_status
 
     if test -n (__cyber_toast_git_status_codes)
       __cyber_toast_color_echo $__cyber_toast_color_pink ' ●'
-      __cyber_toast_color_echo $__cyber_toast_color_white ' (╯°□°）╯︵ ┻━┻  '
+      __cyber_toast_color_echo $__cyber_toast_color_white ' [^._.^]ﾉ'
       __cyber_toast_git_status_icons
     else
       __cyber_toast_color_echo $__cyber_toast_color_green ' ○'
