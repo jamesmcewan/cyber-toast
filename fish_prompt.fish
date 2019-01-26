@@ -1,12 +1,12 @@
+set __cyber_toast_color_orange ff2600
 set __cyber_toast_color_blue 00beff
 set __cyber_toast_color_green 00faac
 set __cyber_toast_color_yellow fef96a
-set __cyber_toast_color_magenta de95ff
-set __cyber_toast_color_orange ff2600
 set __cyber_toast_color_pink ff95ee
 set __cyber_toast_color_grey e5e5e5
 set __cyber_toast_color_white feffff
-set __cyber_toast_color_cyan 85cbfd
+set __cyber_toast_color_purple de95ff
+set __cyber_toast_color_lilac 85cbfd
 
 function __cyber_toast_color_echo
   set_color $argv[1]
@@ -45,7 +45,7 @@ function __cyber_toast_git_status_icons
   __cyber_toast_rainbow $git_status $__cyber_toast_color_white 'C'
   __cyber_toast_rainbow $git_status $__cyber_toast_color_green 'A'
   __cyber_toast_rainbow $git_status $__cyber_toast_color_blue 'U'
-  __cyber_toast_rainbow $git_status $__cyber_toast_color_cyan 'M'
+  __cyber_toast_rainbow $git_status $__cyber_toast_color_lilac 'M'
   __cyber_toast_rainbow $git_status $__cyber_toast_color_grey '?'
 end
 
@@ -64,11 +64,11 @@ function __cyber_toast_git_status
       __cyber_toast_color_echo $__cyber_toast_color_green ' ○'
     end
   end
-  __cyber_toast_color_echo $__cyber_toast_color_magenta (__cyber_toast_current_folder)
 end
 
 function fish_prompt
   __cyber_toast_color_echo $__cyber_toast_color_blue "# "
+  __cyber_toast_color_echo $__cyber_toast_color_purple (__cyber_toast_current_folder)
   __cyber_toast_git_status
   echo
   __cyber_toast_color_echo $__cyber_toast_color_pink "\$ "
