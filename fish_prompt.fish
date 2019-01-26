@@ -33,7 +33,7 @@ end
 
 function __cyber_toast_rainbow
   if echo $argv[1] | grep -q -e $argv[3]
-    __cyber_toast_color_echo $argv[2] "┻━┻"
+    __cyber_toast_color_echo $argv[2] "彡ミ"
   end
 end
 
@@ -57,11 +57,11 @@ function __cyber_toast_git_status
     __cyber_toast_color_echo $__cyber_toast_color_white ":"(__cyber_toast_git_branch_name)
 
     if test -n (__cyber_toast_git_status_codes)
-      __cyber_toast_color_echo $__cyber_toast_color_pink ' ★'
-      __cyber_toast_color_echo $__cyber_toast_color_white ' (╯°□°）╯︵ ┻━┻'
+      __cyber_toast_color_echo $__cyber_toast_color_pink ' ●'
+      __cyber_toast_color_echo $__cyber_toast_color_white ' (╯°□°）╯︵ ┻━┻  '
       __cyber_toast_git_status_icons
     else
-      __cyber_toast_color_echo $__cyber_toast_color_green ' ☆'
+      __cyber_toast_color_echo $__cyber_toast_color_green ' ○'
     end
   end
   __cyber_toast_color_echo $__cyber_toast_color_magenta (__cyber_toast_current_folder)
